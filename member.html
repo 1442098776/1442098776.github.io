@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<title>wazor</title>
+	<link rel="shortcut icon" type="text/css" href="images/favicon.jpg">
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/member.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>  
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elbents and media queries
+	<script type="text/javascript" src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script> 
+	<script type="text/javascript" src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script> -->
+</head>
+<body>
+	<div class="container-fluid header">
+		<div class="container header-nav">
+			<div class="row-fluid">
+			     <div class="col-sm-2 logo">
+			     	<a href="index.html">
+			     		<img src="images/logo.png" alt="WAZOR" class="img-responsive">
+			     	</a>
+			     </div>
+		    	<div class="col-md-12 col-sm-10 col-xs-12" id="nav">
+		    	    <div class="sign-register">
+		    	    	<p><a href="member.html" class="glyphicon glyphicon-shopping-cart navCart" title="Shopping Cart"><a href="register.html" title="REGISTER">REGISTER</a><em>|</em><a href="sign.html" title="SIGN IN">SIGN IN</a></p>
+		    	    </div>
+		    		<nav class="navbar">
+		    			<div class="navbar-header">
+		    			     <a href="index.html" class="navbar-brand">
+		    			     	<img src="images/logo.png" alt="WAZOR">
+		    			     </a>
+	                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ex-collapse" aria-expanded="false">
+	                            <span class="icon-bar"></span>
+	                            <span class="icon-bar"></span>
+	                            <span class="icon-bar"></span>
+		                    </button>
+		                </div>
+	   	       	        <div class="collapse navbar-collapse text-center" id="ex-collapse">
+	       		            <ul class="nav navbar-nav">
+	       		                <li><a href="index.html" title="HOME">HOME</a></li>
+	       		        	    <li><a href="products.html" title="products">ALL PRODUCTS</a></li>
+	       		        	    <li><a href="company.html" title="COMPANY">COMPANY</a></li>
+	       		        	    <li><a href="join.html" title="JOIN US">JOIN US</a></li>
+	       		        	    <li><a href="contact.html" title="CONTACT US">CONTACT US</a></li>
+	       		        	    <li><a href="member.html" title="MEMBER CENTER">MEMBER CENTER</a></li>
+	       		            </ul>
+	   	       	        </div>
+		    		</nav>
+		    		<div class="nav1">
+		    		    <div class="left pull-left">
+		    		    	<span class="glyphicon glyphicon-chevron-left"></span>
+		    		    </div>
+			    		<div class="pull-left">
+				    		<ul class="ul list-inline list-unstyled">
+				    		    <li><a href="index.html" title="HOME">HOME</a></li>
+		   		        	    <li><a href="products.html" title="products">ALL PRODUCTS</a></li>
+		   		        	    <li><a href="company.html" title="COMPANY">COMPANY</a></li>
+		   		        	    <li><a href="join.html" title="JOIN US">JOIN US</a></li>
+		   		        	    <li><a href="contact.html" title="CONTACT US">CONTACT US</a></li>
+		   		        	    <li><a href="member.html" title="MEMBER CENTER">MEMBER CENTER</a></li>
+		   		            </ul>
+			    		</div>
+	   		            <div class="right pull-right text-right">
+	   		            	<span class="glyphicon glyphicon-chevron-right"></span>
+	   		            </div>
+		    		</div>
+		    	</div>
+		    </div>
+		</div>
+	</div>
+	<!-- 以上是头部 -->
+
+	<div class="popup">
+	    <!-- 以下是Orders & Returns显示中点击Returns后显示的弹窗  -->
+		<div class="container shipmentDetails">
+		    <span class="popupClose popupClose1" title="close"><img src="images/member/delete_normal.png" class="center-block"></span>
+			<div class="row-fluid">
+				<div class="col-md-12 col-sm-12 col-xs-12 count">
+					<p>Shipment details</p>
+					<div class="shaft">
+						<p>
+						    <span></span><span></span><span></span><span></span><span></span><span></span><span><img src="images/member/shipment.png" class="img-responsive"></span>
+						</p>
+						<p>
+						    <span>Shipping soon</span><span>Shipped</span><span>On the way</span><span>Out for delivery</span><span>Deliveried</span>
+						</p>
+					</div>
+					<div class="shaft1">
+						<p>
+						    <span></span>
+						    <span></span>
+						    <span></span>
+						    <span></span>
+						    <span></span>
+						    <span></span>
+						    <span><img src="images/member/shipment.png" class="img-responsive"></span>
+						</p>
+						<p>
+						    <span>Shipping soon</span>
+						    <span>Shipped</span>
+						    <span>On the way</span>
+						    <span>Out for delivery</span>
+						    <span>Deliveried</span>
+						</p>
+					</div>
+					<p class="time">Monday,9 Jan</p>
+					<div class="media">
+					    <div class="media-left">
+					        <span>4:05 PM</span>
+					        <span>2:05 PM</span>
+					    </div>
+					    <div class="media-body">
+					        <p>Package arrived at a courier facility</p>
+					        <p>
+					            <span>EmaiGURGOAN,HARYYA,IN</span>
+					        </p>
+					        <p>
+					            <span>Courier:</span>
+					            <span>UPS</span>
+					            <span>Tracking #</span>
+					            <span>88888888</span>
+					        </p>
+					        <p>Package arrived at a courier facility</p>
+					        <p>EmaiGURGOAN,HARYYA,IN</p>
+					    </div>
+					</div>
+					<p class="time">Saturday,7 Jan</p>
+					<div class="media">
+					    <div class="media-left">
+					        <span>4:05 PM</span>
+					        <span>2:05 PM</span>
+					    </div>
+					    <div class="media-body">
+					        <p>Package arrived at a courier facility</p>
+					        <p>
+					            <span>EmaiGURGOAN,HARYYA,IN</span>
+					        </p>
+					        <p>Package arrived at a courier facility</p>
+					        <p>EmaiGURGOAN,HARYYA,IN</p>
+					    </div>
+					</div>
+					<p class="time">Thursday,5 Jan</p>
+					<div class="media">
+					    <div class="media-left">
+					        <span>4:05 PM</span>
+					        <span>2:05 PM</span>
+					    </div>
+					    <div class="media-body">
+					        <p>Package arrived at a courier facility</p>
+					        <p><span>EmaiGURGOAN,HARYYA,IN</p>
+					        <p>Package arrived at a courier facility</p>
+					        <p>EmaiGURGOAN,HARYYA,IN</p>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 以下是Orders & Returns显示中点击Completed后显示的弹窗  -->
+		<div class="container ordersCompleted">
+			<span class="popupClose popupClose1" title="close"><img src="images/member/delete_normal.png" class="center-block"></span>
+			<div class="row-fluid">
+				<div class="col-md-12 col-sm-12 col-xs-12 count">
+					<p>Choose items to return</p>
+					<p>Ordered on Jan 13,2018(12345678)</p>
+					<div class="table-responsive">
+						<table>
+								<tr>
+									<td><img src="images/member/img_chanpin.png" class="img-responsive center-block"></td>
+									<td>
+										<a href="products.html" title="WAZOR">WAZOR</a>
+										<p>Professional hair dryers</p>
+										<p>
+										    <span>Shipped : Jan 13,2018</span>
+										    <span>Quantity to return :1</span>
+										</p>
+										<p>
+											<span>Why are you returning this?</span>
+											<select>
+												<option value="Choose a reason" selected>Choose a reason</option>
+											</select>
+										</p>
+									</td>
+								</tr>
+						</table>
+					</div>
+					<p>How can we resolve it?</p>
+					<p>
+					    Returning WAZOR Professional hair dryers(1) | Reason estimated delivery date 
+					</p>
+					<div class="table-responsive">
+						<table>
+								<tr>
+									<td><img src="images/member/img_chanpin.png" class="img-responsive center-block"></td>
+									<td>
+										<div class="form-inline">
+											<input type="radio">
+											<label>Refund</label>
+										</div>
+										<p>
+										    We`ll process your refund to AmericanExpress ending in 3days
+										</p>
+										<p>
+										    Estimated refund timing 2-3business days after we receive the item.
+										</p>
+									</td>
+								</tr>
+						</table>
+					</div>
+					<p>How do you want to sent it back?</p>
+					<p>
+					    Returning :1 item | Shipping from 910 42TH STREET 1FL  BROOKLYN NEW YORK
+					</p>
+					<p>
+						Returning for a refund : WAZOR Professional hair dryers
+					</p>
+					<div class="table-responsive">
+						<table>
+								<tr>
+									<td><img src="images/member/img_chanpin.png" class="img-responsive center-block"></td>
+									<td>
+										<div class="form-inline">
+											<input type="radio" name="radio">
+											<label>UPS Dropoff</label>
+											<label class="pull-right">$0.00</label>
+										</div>
+										<p>
+										    Find a UPS location
+										</p>
+										<p>
+										    Printer required - you can print the label any time from Your Account or from the email we`II send you.
+										</p>
+										<div class="form-inline">
+											<input type="radio" name="radio">
+											<label>UPS Pickup</label>
+											<label class="pull-right">$0.00</label>
+										</div>
+										<p>
+											UPS will pickup your return package on the next business day.
+										</p>
+										<p>
+											Printer required - you can print the label any time from Your Account or from the email we`II send you.
+										</p>
+									</td>
+								</tr>
+						</table>
+					</div>
+					<p>Refund summary</p>
+					<p><span>Refund subtotal :</span><span>$100.00</span></p>
+					<p><span>Shipping (UPS Dropoff) :</span><span>$0.00</span></p>
+					<p><span>Total estimated refund :</span><span>$100.00</span></p>
+					<button type="submit">SUBMIT</button>
+				</div>
+			</div>
+		</div>
+		<!-- 以下是Address Book显示中点击Edit后显示的弹窗  -->
+		<div class="container editAddress">
+			<div class="row-fluid">
+				<div class="col-md-12 col-sm-12 col-xs-12 count">
+					<p class="text-center addressHeader">DEIT ADDRESS</p>
+					<form action="" method="post" class="form-horizontal">
+						<div class="form-group">
+							<label class="col-md-3 col-sm-3 col-xs-5" for="firstName1">First name*:</label>
+							<div class="col-md-9 col-sm-9 col-xs-7">
+								<input type="text" id="firstName1" class="firstName1 form-control" placeholder="Pan">
+								<p></p>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-3 col-sm-3 col-xs-5" for="lastName1">Last name*:</label>
+							<div class="col-md-9 col-sm-9 col-xs-7">
+								<input type="text" id="lastName1" class="lastName1 form-control" placeholder="Jintao">
+								<p></p>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-3 col-sm-3 col-xs-5" for="Country">Country*:</label>
+							<div class="col-md-9 col-sm-9 col-xs-7">
+								<select id="Country" class="form-control">
+								</select>
+								<p></p>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-3 col-sm-3 col-xs-5" for="address1">Address 1*:</label>
+							<div class="col-md-9 col-sm-9 col-xs-7">
+								<input type="text" id="address1" class="address1 form-control" placeholder="2009 118TH ST,Apt 2G New York">
+								<p></p>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-3 col-sm-3 col-xs-5" for="city">city*:</label>
+							<div class="col-md-9 col-sm-9 col-xs-7">
+								<input type="text" id="city" class="city form-control" placeholder="New York">
+								<p></p>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-3 col-sm-3 col-xs-5" for="zipcode">Zipcode*:</label>
+							<div class="col-md-9 col-sm-9 col-xs-7">
+								<input type="text" id="zipcode" class="zipcode form-control" placeholder="11219">
+								<p></p>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-3 col-sm-3 col-xs-5" for="State">State/Province*:</label>
+							<div class="col-md-9 col-sm-9 col-xs-7">
+								<select id="State" class="form-control">
+								</select>
+								<p></p>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-md-3 col-sm-3 col-xs-5">
+								<button type="reset" class="popupClose1">CANCEL</buton>
+							</div>
+							<div class="col-md-9 col-sm-9 col-xs-7">
+								<button type="submit" class="pull-right">SAVE</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 以下是中部 -->
+	<div class="container memberMiddle">
+		<div class="row-fluid">
+		    <!-- 这是左边列表 -->
+			<div class="col-md-4 col-sm-3 col-xs-12 centerLeft">
+				<ul class="list-unstyled">
+					<li>Personal Center</li>
+					<li>Personol Details</li>
+					<li>Orders & Returns</li>
+					<li>Address Book</li>
+					<li>Shopping Cart</li>
+					<li>Wish List</li>
+					<li>My Preferences</li>
+				</ul>
+			</div>
+			
+			<div class="col-md-8 col-sm-9 col-xs-12 centerRight">
+				<div class="user">
+					<p>Welcome,<span>Panjintao</span></p>
+					<div class="media">
+					    <div class="media-left">
+					        <a href="products.html">
+					          <img src="">
+					        </a>
+					    </div>
+					    <div class="media-body">
+					        <p><span>Username</span>&nbsp;&nbsp;<span>Panjintao</span>&nbsp;&nbsp;<span>Gender</span>&nbsp;&nbsp;<span>Male</span></p>
+					        <p><span>Email Address</span>&nbsp;&nbsp;<span>Dpanjintao@Gmail.com</span>&nbsp;&nbsp;<span>Date of birth</span>&nbsp;&nbsp;<span>01-01-1992</span></p>
+					        <p><span>phone Number</span>&nbsp;&nbsp;<span>11012011900</span>&nbsp;&nbsp;<span>Country</span><span>USA</span></p>
+					    </div>
+					</div>
+					<div class="user1">
+						<div>
+							<a href="products.html">
+								<img src="">
+							</a>
+						</div>
+						<div>
+							<!-- <p><span>Username</span>&nbsp;&nbsp;<span>Panjintao</span>&nbsp;&nbsp;<span>Gender</span>&nbsp;&nbsp;<span>Male</span></p>
+					        <p><span>Email Address</span>&nbsp;&nbsp;<span>Dpanjintao@Gmail.com</span>&nbsp;&nbsp;<span>Date of birth</span>&nbsp;&nbsp;<span>01-01-1992</span></p>
+					        <p><span>phone Number</span>&nbsp;&nbsp;<span>11012011900</span>&nbsp;&nbsp;<span>Country</span><span>USA</span></p> -->
+
+					        <p><span>Username</span><span>Panjintao</span></p>
+					        <p><span>Gender</span><span>Male</span></p>
+					        <p><span>Email Address</span><span>Dpanjintao@Gmail.com</span></p>
+					        <p><span>Date of birth</span><span>01-01-1992</span></p>
+					        <p><span>phone Number</span><span>11012011900</span></p>
+					        <p><span>Country</span><span>USA</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="orders">
+					<p class="srcImg" title="Your Orders">Your Orders<span class="pull-right"><img src="images/member/right.png"></span></p>
+					<div class="product">
+						<p>Order Date:<span>08-08-2018</span>Order Number:<span>88888888</span></p>
+						<div class="media">
+						    <div class="media-left">
+						        <a href="products.html" title="WAZOR">
+						            <img src="images/member/img_chanpin.png">
+						        </a>
+						    </div>
+						    <div class="media-body">
+						        <p><a href="products.html" title="Wazor">Wazor</a></p>
+						        <p><a href="products.html" title="Professional hair dryers">Professional hair dryers</a></p>
+						        <p><span>&times1</span>&nbsp;&nbsp;<span>$999</span>&nbsp;&nbsp;<span>Completed</span>&nbsp;&nbsp;<span class="remove">Remove</span></p>
+						    </div>
+						</div>
+					</div>
+					<div class="product">
+						<p>Order Date:<span>08-08-2018</span>Order Number:<span>88888888</span></p>
+						<div class="media">
+						    <div class="media-left">
+						        <a href="products.html" title="WAZOR">
+						            <img src="images/member/img_chanpin.png">
+						        </a>
+						    </div>
+						    <div class="media-body">
+						        <p><a href="products.html" title="Wazor">Wazor</a></p>
+						        <p><a href="products.html" title="Professional hair dryers">Professional hair dryers</a></p>
+						        <p><span>&times1</span>&nbsp;&nbsp;<span>$999</span>&nbsp;&nbsp;<span>Completed</span>&nbsp;&nbsp;<span class="remove">Remove</span></p>
+						    </div>
+						</div>
+					</div>
+				</div>
+				<div class="cart">
+					<div class="cartLeft pull-left">
+						<p  class="srcImg1" title="Shopping Cart">Shopping Cart <span class="pull-right"><img src="images/member/right.png"></span></p>
+						<div class="media">
+						    <div class="media-left">
+						        <a href="products.html" title="WAZOR">
+						          <img src="images/member/img_chanpin.png">
+						        </a>
+						    </div>
+						    <div class="media-body">
+						        <p class="mediap1"><a href="products.html" title="Wazor">Wazor</a></p>
+						        <p class="mediap2"><a href="products.html" title="Professional hair dryers">Professional hair dryers</a></p>
+						        <p class="mediap3">$999</p>
+						        <p class="mediap2">Lown in stock</p>
+						    </div>
+						</div>
+						<div class="media">
+					        <div class="media-left">
+					            <a href="products.html" title="WAZOR">
+					              <img src="images/member/img_chanpin.png">
+					            </a>
+					        </div>
+					        <div class="media-body">
+					            <p class="mediap1"><a href="products.html" title="Wazor">Wazor</p>
+						        <p class="mediap2"><a href="products.html" title="Professional hair dryers">Professional hair dryers</a></p>
+						        <p class="mediap3">$999</p>
+						        <p class="mediap2">Lown in stock</p>
+					        </div>
+					    </div>
+					</div>
+					<div class="cartRight pull-left">
+						<p class="srcImg2" title="Wish List">Wish List<span class="pull-right"><img src="images/member/right.png"></span></p>
+						<div class="media">
+						    <div class="media-left">
+						        <a href="products.html" title="WAZOR">
+						          <img src="images/member/img_chanpin.png">
+						        </a>
+						    </div>
+						    <div class="media-body">
+						        <p class="mediap1"><a href="products.html" title="Wazor">Wazor</a></p>
+						        <p class="mediap2"><a href="products.html" title="Professional hair dryers">Professional hair dryers</a></p>
+						        <p class="mediap3">$999</p>
+						        <p class="mediap2">Lown in stock</p>
+						    </div>
+						</div>
+						<div class="media">
+					        <div class="media-left">
+					            <a href="products.html" title="WAZOR">
+					              <img src="images/member/img_chanpin.png">
+					            </a>
+					        </div>
+					        <div class="media-body">
+					            <p class="mediap1"><a href="products.html" title="Wzaor">Wazor</a></p>
+						        <p class="mediap2"><a href="products.html" title="Professional hair dryers">Professional hair dryers</a></p>
+						        <p class="mediap3">$999</p>
+						        <p class="mediap2">Lown in stock</p>
+					        </div>
+					    </div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 以下是点击Personal Details这项右边显示的  -->
+			<div class="col-md-8 col-sm-9 col-xs-12 centerRight1">
+				<p class="p1">YOUR DETAILS</p>
+				<div class="details">
+					<form action="" method="post">
+					    <div class="form-group">
+					     	<label for="text" title="First name">First name:</label>
+					     	<input type="text" placeholder="Pan" id="text" class="form-control firstName">
+					     	<p></p>
+					    </div>
+					    <div class="form-group">
+					     	<label for="text1" title="Last name">Last name:</label>
+					     	<input type="text" placeholder="Jintao" id="text1" class="form-control lastName">
+					     	<p></p>
+					    </div>
+					    <div class="form-group">
+					     	<label for="email" title="Email address">Email address:</label>
+					     	<input type="email" placeholder="******@gmail.com" id="email" class="form-control emailAddress">
+					     	<p></p>
+					    </div>
+					    <div class="form-group">
+					     	<label for="email1" title="Comfirm email">Comfirm email:</label>
+					     	<input type="email" placeholder="******@gmail.com" id="email1" class="form-control comfirmEmail">
+					     	<p></p>
+					    </div>
+					    <div class="form-group">
+					     	<label title="Gender">Gender:</label><br>
+					     	<input type="radio" name="sex" class="radio-inline"> Femaie
+					     	<input type="radio" id="radio" name="sex" class="radio-inline"> Male
+					    </div>
+					    <div class="form-group">
+					     	<label for="date" title="Date of birth">Date of birth:</label>
+					     	<input type="date" id="date" placeholder="" class="form-control date">
+					     	<p></p>
+					    </div>
+					    <button type="submit" class="text-center form-control"> SAVE DETAILS</button>
+					</form>
+				</div>
+				<p class="p1">CHANGE PASSWORD</p>
+				<div class="pwdDiv">
+					<form action="" method="post">
+						<div class="form-group">
+					     	<label for="pwd1" title="urrent password">Current password:</label>
+					     	<input type="password" placeholder="****" id="pwd1" class="form-control currentPwd">
+					     	<p></p>
+					    </div>
+					    <div class="form-group">
+					     	<label for="pwd2" title="Password">Password:</label>
+					     	<input type="password" placeholder="Password" id="pwd2" class="form-control pwd">
+					     	<p></p>
+					    </div>
+					    <div class="form-group">
+					     	<label for="pwd3" title="Confirm Password">Confirm Password:</label>
+					     	<input type="password" placeholder="Confirm Password" id="pwd3" class="form-control confirmPwd">
+					     	<p></p>
+					    </div>
+					    <button type="submit" class="text-center form-control"> SAVE</button>
+             		</form>
+				</div>
+			</div>
+
+			<!-- 以下是点击Orders & Retums这项显示的  有订单 -->
+			<div class="col-md-8 col-sm-9 col-xs-12 centerRight2">
+				<p class="p1">YOUR ORDERS</p>
+				<div class="form-inline">
+					<label>Sort By</label>
+					<select>
+						<option value="All Orders" selected>All Orders</option>
+						<option value="Completed">Completed</option>
+						<option value="Pending">Pending</option>
+						<option value="Processing">Processing</option>
+					</select>
+				</div>
+				<div class="orders">	
+					<div class="product">
+						<p>Order Date:<span>08-08-2018</span>Order Number:<span>88888888</span></p>
+						<div class="media">
+						    <div class="media-left">
+						        <a href="products.html" title="WAZOR">
+						            <img src="images/member/img_chanpin.png">
+						        </a>
+						    </div>
+						    <div class="media-body">
+						        <p><a href="products.html" title="Wazor">Wazor</a></p>
+						        <p><a href="products.html" title="Professional hair dryers">Professional hair dryers</a></p>
+						        <p>
+						            <span>&times1</span>&nbsp;&nbsp;
+						            <span>$999</span>&nbsp;&nbsp;
+						            <span class="completed">Completed</span>&nbsp;&nbsp;
+						            <span class="remove">Remove</span>
+						        </p>
+						        <p>
+						            <span class="pull-right returns">Returns</span>
+						        </p>
+						    </div>
+						</div>
+					</div>
+					<div class="product">
+						<p>Order Date:<span>08-08-2018</span>Order Number:<span>88888888</span></p>
+						<div class="media">
+						    <div class="media-left">
+						        <a href="products.html" title="WAZOR">
+						            <img src="images/member/img_chanpin.png">
+						        </a>
+						    </div>
+						    <div class="media-body">
+						        <p><a href="products.html" title="Wazor">Wazor</a></p>
+						        <p><a href="products.html" title="Professional hair dryers">Professional hair dryers</a></p>
+						        <p>
+						            <span>&times1</span>&nbsp;&nbsp;
+						            <span>$999</span>&nbsp;&nbsp;
+						            <span class="completed">Completed</span>&nbsp;&nbsp;
+						            <span class="remove">Remove</span>
+						        </p>
+						        <p>
+						            <span class="pull-right returns">Returns</span>
+						        </p>
+						    </div>
+						</div>
+					</div>
+					<div class="product">
+						<p>Order Date:<span>08-08-2018</span>Order Number:<span>88888888</span></p>
+						<div class="media">
+						    <div class="media-left">
+						        <a href="products.html" title="WAZOR">
+						            <img src="images/member/img_chanpin.png">
+						        </a>
+						    </div>
+						    <div class="media-body">
+						        <p><a href="products.html" title="Wazor">Wazor</a></p>
+						        <p><a href="products.html" title="Professional hair dryers">Professional hair dryers</a></p>
+						        <p>
+						             <span>&times1</span>&nbsp;&nbsp;
+						             <span>$999</span>&nbsp;&nbsp;
+						             <span class="completed">Completed</span>&nbsp;&nbsp;
+						             <span class="remove">Remove</span></p>
+						        <p>
+						            <span class="pull-right returns">Returns</span>
+						        </p>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 以下是点击Orders & Retums这项右边显示的  没有订单 暂时隐藏起来 -->
+			<div class="col-md-8 col-sm-9 col-xs-12 centerRight3">
+				<p class="p1">YOUR ORDERS</p>
+				<p class="p2">You currently have no orders.</p>
+			</div>
+
+			<!-- 以下是点击Address Book这项右边显示的  有地址 -->
+			<div class="col-md-8 col-sm-9 col-xs-12 centerRight4">
+				<p class="p1">ADDRESS BOOK</p>
+				<div class="addressBook">
+					<p>PAN JINTAO</p>
+					<p><span>209 W 118TH St,Apt 2G</span><span class="edit">Edit</span><span class="remove1">Remove</span></p>
+					<p>New York,United States,10026-1712</p>
+				</div>
+				<div class="addressBook">
+					<p>PAN JINTAO</p>
+					<p><span>209 W 118TH St,Apt 2G</span><span class="edit">Edit</span><span class="remove1">Remove</span></p>
+					<p>New York,United States,10026-1712</p>
+				</div>
+				<div class="addressBook">
+					<p>PAN JINTAO</p>
+					<p><span>209 W 118TH St,Apt 2G</span><span class="edit">Edit</span><span class="remove1">Remove</span></p>
+					<p>New York,United States,10026-1712</p>
+				</div>
+				<p class="text-center add">+ &nbsp; Add a new address</p>
+			</div>
+
+			<!-- 以下是点击Address Book这项右边显示的  没有地址 暂时隐藏起来 -->
+			<div class="col-md-8 col-sm-9 col-xs-12 centerRight5">
+				<p class="p1">ADDRESS BOOK</p>
+				<P class="p2">You have no saved addresses,add a new address to make your next purchase even easier.</P>
+				<p class="text-center add">+ &nbsp; Add a new address</p>
+			</div>
+
+
+			<!-- 以下是点击Shopping Cart这项右边显示的 己加入商品的 -->
+			<div class="col-md-8 col-sm-9 col-xs-12 centerRight6">
+				<p class="p1">MY CART</p>
+				<p class="text-right"><span class="total">TOTAL</span><span class="total1">$119.98</span><button type="submit" class="secureCheckout"><a href="details.html">SECURE CHECKOUT</a></button></p>
+				<p><span>ITEMS</span><span>PRICE</span><span>QUANTITY</span><span>SUBTOTAL</span></p>
+				<div class="secure">
+					<div class="media">
+					    <div class="media-left">
+					        <a href="products.html" title="WAZOR">
+					            <img src="images/member/img_chanpin.png">
+					        </a>
+					    </div>
+					    <div class="media-body">
+					        <p><a href="products.html"><a href="products.html" title="Wazor">Wazor</a></p>
+					        <p><a href="products.html" title="Professional hair dryers">Professional hair dryers</a></p>
+					        <p>
+					            <span>$59.99</span>
+					            <input class="minus" type="button" value="-">
+					            <input class="text-center text" type="text" value="1">
+					            <input class="plus" type="button" value="+">
+					            <span>$59.99</span>
+					            <span class="remove2"><img src="images/member/delete_normal.png" alt=""></span>
+					        </p>
+					    </div>
+					</div>
+				</div>
+				<div class="secure">
+					<div class="media">
+					    <div class="media-left">
+					        <a href="products.html" title="WAZOR">
+					            <img src="images/member/img_chanpin.png">
+					        </a>
+					    </div>
+					    <div class="media-body">
+					        <p><a href="products.html" title="Wazor">Wazor</a></p>
+					        <p><a href="products.html" title="Professional hair dryers">Professional hair dryers</a></p>
+					        <p>
+					            <span>$59.99</span>
+					            <input class="minus" type="button" value="-">
+					            <input class="text-center text" type="text" value="1">
+					            <input class="plus" type="button" value="+">
+					            <span>$59.99</span>
+					            <span class="remove2"><img src="images/member/delete_normal.png" alt=""></span>
+					        </p>
+					    </div>
+					</div>
+				</div>
+				<p><button type="submit" class="secureCheckout"><a href="details.html">SECURE CHECKOUT</a></button><span class="total">TOTAL</span><span class="total1">$119.98</span></p>
+				<form action="details.html" method="post" class="form-inline">
+				    <div class="form-group input-group">
+				     	<label>Got a discount code?Enter it here</label>
+				     	<input placeholder="Add discount code" type="text">
+				     	<button type="button">ADD</button>
+				     	<button type="submit" class="secureCheckout"><a href="details.html">SECURE CHECKOUT</a></button>
+				    </div>
+				    
+				</form>
+			</div>
+
+			<!-- 以下是点击Shopping Car这项右边显示的 未加入商品的 暂时隐藏起来 -->
+			<div class="col-md-8 col-sm-9 col-xs-12 centerRight7">
+				<p class="p1">MY CART</p>
+				<p class="p2">Your shopping Cart is empty.Start shopping now or adding items to your Wish List to save them for later.</p>
+				<p class="text-center add2"><a href="products.html">Continue shopping</a></p>
+			</div>
+
+			<!-- 以下是点击Wish List这项右边显示的 己加入商品的 -->
+			<div class="col-md-8 col-sm-9 col-xs-12 centerRight8">
+				<p class="p1">WISH LIST</p>
+				<div class="wishList">
+				    <span class="remove3"><img src="images/member/delete_normal.png" alt=""></span>
+					<div class="media">
+					    <div class="media-left">
+					        <a href="products.html" title="WAZOR">
+					            <img src="images/member/img_chanpin.png">
+					        </a>
+					    </div>
+					    <div class="media-body">
+		                    <p class="mediap1"><a href="products.html" titlle="Wazor">Wazor</a></p>
+		        	        <p class="mediap2"><a href="products.html" title="Professional hair dryers">Professional hair dryers</a></p>
+		        	        <p class="mediap3">$999</p>
+		        	        <p class="mediap2">Lown in stock</p>
+					    </div>
+					</div>
+					<a href="products.html" class="text-center" titlle="Wazor">Learn More</a>
+				</div>
+				<div class="wishList">
+				    <span class="remove3"><img src="images/member/delete_normal.png" alt=""></span>
+					<div class="media">
+					    <div class="media-left">
+					        <a href="products.html" title="WAZOR">
+					            <img src="images/member/img_chanpin.png">
+					        </a>
+					    </div>
+					    <div class="media-body">
+		                    <p class="mediap1"><a href="products.html" titlle="Wazor">Wazor</a></p>
+		        	        <p class="mediap2"><a href="products.html" title="Professional hair dryers">Professional hair dryers</a></p>
+		        	        <p class="mediap3">$999</p>
+		        	        <p class="mediap2">Lown in stock</p>
+					    </div>
+					</div>
+					<a href="products.html" class="text-center">Learn More</a>
+				</div>
+				<div class="wishList">
+				    <span class="remove3"><img src="images/member/delete_normal.png" alt=""></span>
+					<div class="media">
+					    <div class="media-left">
+					        <a href="products.html" title="WAZOR">
+					            <img src="images/member/img_chanpin.png">
+					        </a>
+					    </div>
+					    <div class="media-body">
+		                    <p class="mediap1"><a href="products.html" titlle="Wazor">Wazor</a></p>
+		        	        <p class="mediap2"><a href="products.html" title="Professional hair dryers">Professional hair dryers</a></p>
+		        	        <p class="mediap3">$999</p>
+		        	        <p class="mediap2">Lown in stock</p>
+					    </div>
+					</div>
+					<a href="products.html" class="text-center">Learn More</a>
+				</div>
+				<div class="wishList">
+				    <span class="remove3"><img src="images/member/delete_normal.png" alt=""></span>
+					<div class="media">
+					    <div class="media-left">
+					        <a href="products.html" title="WAZOR">
+					            <img src="images/member/img_chanpin.png">
+					        </a>
+					    </div>
+					    <div class="media-body">
+		                    <p class="mediap1"><a href="products.html" titlle="Wazor">Wazor</a></p>
+		        	        <p class="mediap2"><a href="products.html" title="Professional hair dryers">Professional hair dryers</a></p>
+		        	        <p class="mediap3">$999</p>
+		        	        <p class="mediap2">Lown in stock</p>
+					    </div>
+					</div>
+					<a href="products.html" class="text-center">Learn More</a>
+				</div>
+			</div>
+
+			<!-- 以下是点击Wish List这项右边显示的 未加入商品的 暂时隐藏起来 -->
+			<div class="col-md-8 col-sm-9 col-xs-12 centerRight9">
+				<p class="p1">WISH LIST</p>
+				<p class="p2">You have no items in your Wish List.</p>
+				<div class="wish clearfix"></div>
+				<p class="text-center"><a href="products.html">Start shopping</a></p>
+			</div>
+
+			<!-- 以下是点击My Preferences这项右边显示的 -->
+			<div class="col-md-8 col-sm-9 col-xs-12 centerRight10">
+				<p class="p1">MY PREFERENCES</p>
+				<p class="p2">Select your preferred communication language</p>
+				<p class="p3">this language will be used on any communication from us relating to your online order(s),inclucing emails and text messages</p>
+				<div>
+					<select id="select">
+					</select>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+	<!-- 以下底部 -->
+	<div class="container-fluid footer">
+		<div class="container count">
+			<div class="row-fluid">
+				<div class="col-md-3 col-sm-3 col-xs-6 padding">
+					<dl>
+						<dt>About us</dt>
+						<dd><a href="company.html" title="Our company">Our company</a></dd>
+						<dd><a href="companyNews.html" title="Company news">Company news</a></dd>
+						<dd><a href="join.html" title="Join us">Join us</a></dd>
+					</dl>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-6 padding">
+					<dl>
+						<dt>Support</dt>
+						<dd><a href="" title="Buy at amazon">Buy at amazon</a></dd>
+						<dd><a href="member.html" title="Returns">Returns</a></dd>
+						<dd><a href="company.html" title="Brand stories">Brand stories</a></dd>
+					</dl>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-12 padding">
+					<dl class="dl3">
+						<dt>Contact us</dt>
+						<dd><span class="iconfont">&#xe63b;</span><span>12345678910</span></dd>
+						<dd><span class="iconfont">&#xe610;</span><span>123456789@wazor.com</span></dd>
+						<dd><span class="center-block">987654321@wazor.com</span></dd>
+					</dl>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="col-md-9 col-sm-8 col-xs-12 padding ul1">
+					<ul class="list-unstyled clearfix">
+						<li>Payment methods : </li>
+						<li><img src="images/fa-cc-visa.png" class="img-responsive"></li>
+						<li><img src="images/fa-cc-mastercard.png" class="img-responsive"></li>
+						<li><img src="images/fa-cc-paypal.png" class="img-responsive"></li>
+						<li><img src="images/fa-cc-discover.png" class="img-responsive"></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-12 padding text-right ul2">
+					<ul class="list-unstyled list-inline">
+						<li><a href=""><span class="iconfont">&#xe632;</span></span></a></li>
+						<li><a href=""><span class="iconfont">&#xe902;</span></span></a></li>
+						<li><a href=""><span class="iconfont">&#xe7b9;</span></span></a></li>
+						<li><a href=""><span class="iconfont">&#xe8d7;</span></span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="col-md-12 col-sm-12 col-xs-12 padding">
+					<p class="p">Copyright © 2018 Wazor Innovations Limited</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/nav.js" type="text/javascript"></script>
+	<script src="js/member.js" type="text/javascript"></script>
+</body>
+</html>

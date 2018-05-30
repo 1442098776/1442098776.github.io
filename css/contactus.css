@@ -1,0 +1,153 @@
+.contactus{
+	padding-top: 10px;
+	padding-bottom: 70px;
+}
+.contactus>.section{
+	margin: 0 auto;
+}
+.contactus .pCall{
+	margin-top: 30px;
+	padding-bottom: 10px;
+	 font-size:22px;
+	 font-weight: bold;
+	color:rgba(0,0,0,1);
+	border-bottom: 1px solid #E0E0E0;
+	margin-bottom: 20px;
+}
+.contactus .phoneRight{
+	padding-top: 28px;
+	padding-bottom: 13px;
+}
+.contactus .phoneRight>p span:first-of-type{
+	display: inline-block;
+	font-weight: bold;
+	width: 78px;
+}
+.contactus .phoneRight>p span:nth-of-type(2){
+	font-weight: bold;
+	font-size: 16px;
+	color: #CDA118;
+}
+.count1>.pCall{
+	margin-bottom: 10px;
+}
+.contactus .count2{
+	padding-top: 27px;
+}
+.count2>form>.form-group{
+	margin-bottom: 20px;
+}
+.count2>form>div:first-of-type>label{
+	font-weight: bold;
+}
+.count2>form>div:first-of-type>div{
+	color: #666666;
+	font-size: 12px;
+}
+.count2>form .p1{
+	padding-top: 10px;
+	font-size: 12px;
+	color: #666666;
+	margin-bottom: 30px;
+}
+.count2>form .p2{
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+.count2>form .byEmail{
+	padding-left: 40px;
+}
+.count2>form label{
+	font-weight: normal;
+}
+.count2>form>.form-group>.label1{
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: 0;
+}
+.count2>form input[type="text"],.count2>form input[type="email"]{
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	-o-border-radius: 0;
+	-ms-border-radius: 0;
+	height: 40px;
+}
+.count2>form textarea{
+	border-radius: 0;
+	height: 200px;
+}
+.count2>form textarea~span{
+	display: block;
+	font-size: 12px;
+	color: #666666;
+	margin-top: 10px;
+}
+.count2>form button{
+	font-size: 16px;
+	font-weight: bold;
+	height: 40px;
+	border: 0;
+}
+.count2>form button[type="reset"]{
+	width: 127px;
+	margin-right: 5px;
+	color: #000;
+	border: 1px solid #000;
+	background-color: #fff;
+}
+.count2>form button[type="submit"]{
+	width: 100px;
+	background-color: #000;
+	color: #fff;
+}
+.count2>form button:hover{
+	background-color: #cda118;
+	border: 0;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+}
+
+@media screen and (min-width: 992px) {
+	.contactus>.section{
+		width: 800px;
+	}
+	.count2>form{
+		width: 665px;
+	}
+	.count2>form>.form-group>label{
+		width: 185px;
+	}
+	.count2>form>.form-group>div{
+		width: 480px;
+	}
+}
+@media screen and (max-width: 991px) and (min-width: 768px){
+	.count2>form>.form-group>label{
+		width: 30%;
+	}
+	.count2>form>.form-group>div{
+		width: 70%;
+	}
+}
+@media screen and (max-width: 767px){
+	.contactus .phoneRight p span{
+		display: block;
+	}
+	.contactus .phoneRight{
+		padding-top: 10px;
+		padding-right: 5px;
+	}
+	.count2>form>.form-group>label{
+		width: 50%;
+	}
+	.count2>form>.form-group>div{
+		width: 50%;
+	}
+	.count2>form .byEmail{
+		padding-left:10px;
+	}
+}

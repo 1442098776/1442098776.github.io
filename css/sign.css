@@ -1,0 +1,162 @@
+@keyframes register {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.sign{
+	animation: register 1s ease-in;
+	-webkit-animation: register 1s ease-in;
+	-moz-animation: register 1s ease-in;
+	-ms-animation: register 1s ease-in;
+	-o-animation: register 1s ease-in;
+	background: url('../images/register1.png') no-repeat;
+	background-size:100% 100%;
+	padding-top: 100px;
+	padding-bottom: 140px;
+}
+.sign .count-all{
+	border-top: 3px solid #CDA118;
+	padding-top: 40px;
+	background-color: #fff;
+	padding-bottom: 50px;
+}
+.count-all .p{
+	color: #000000;
+	margin-bottom: 40px;
+	font-size:24px !important;
+
+}
+.count-all form div:not(.checkbox) label{
+	font-size: 16px !important;
+	color: #000000;
+	font-weight: normal;
+}
+.count-all form .form-group label:last-child{
+  display:none;
+	font-size: 12px !important;
+}
+.count-all .label1,.count-all .label2{
+	font-size: 12px !important;
+}
+.count-all .count1 .password-label{
+	margin-top: 5px;
+}
+.count-all .form-group input,.popupPwd input{
+	height: 40px;
+	border-radius: 0;
+	padding-left: 10px;
+}
+.count-all form .form-group:first-of-type{
+	margin-bottom: 20px;
+}
+.count-all form .form-group{
+	margin-bottom: 10px;
+}
+.count-all form button{
+	background:#242626;
+	color: #ffffff;
+	border-radius: 0;
+	font-weight: bold;
+	font-size: 20px;
+	border: 0;
+	border-radius:0px;
+	-webkit-border-radius:0px;
+	-moz-border-radius:0px;
+	-ms-border-radius:0px;
+	-o-border-radius:0px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	height:50px !important;
+	border-radius: 0;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	-ms-transition: all 1s;
+}
+.count-all button:hover{
+	background-color: #cda118;
+}
+.count-all .count1 a{
+	text-decoration: underline;
+	color: #999999;
+	display: inline-block;
+	font-size: 12px;
+}
+.count-all a:hover{
+	color: #cda118;
+}
+.count-all .checkbox{
+	font-size: 12px;
+	color: #999999;
+}
+
+/* 忘记密码样式 */
+.count-all .count2,.count-all .count3{
+	display: none;
+}
+.count-all .count2 p:first-of-type{
+	font-size: 24px;
+	color: #000000;
+}
+.count-all .count2 p:nth-of-type(2){
+	font-size: 12px;
+	color: #666666;
+	margin-bottom: 40px;
+}
+.count-all .count2 button{
+	margin-bottom: 10px;
+}
+.count-all .count2 u{
+	display: block;
+	color: #242626;
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+/* 重置密码 */
+.count-all .count3 button{
+	margin-bottom: 50px;
+}
+
+@media screen and (min-width: 992px){
+	.sign .count-all{
+		width: 640px;
+		/* height: 540px; */
+		margin: 0 auto;
+	}
+	.count-all .count1,.count-all .count2,.count-all .count3{
+		padding-left: 119px;
+		padding-right: 119px;
+	}
+	.count-all .count1 button{
+		font-size: 18px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+	.sign .count-all{
+		width: 600px;
+		/* height: 540px; */
+		margin: 0 auto;
+	}
+	.count-all .count1{
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+	.count-all .count1 button{
+		font-size: 18px;
+	}
+	.popupPwd>.container{
+		width: 640px;
+	}
+}
+@media screen and (max-width: 350px) {
+	.count-all .count1 h3{
+		font-size: 14px;
+	}
+}

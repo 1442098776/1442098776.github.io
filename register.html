@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="renderer" content="webkit">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+	
+	<title>wazor</title>
+	<link rel="shortcut icon" type="text/css" href="images/favicon.jpg">
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+</head>
+<body>
+	<div class="container-fluid header">
+		<div class="container header-nav">
+			<div class="row-fluid">
+			     <div class="col-sm-2 logo">
+			     	<a href="index.html">
+			     		<img src="images/logo.png" alt="WAZOR" class="img-responsive">
+			     	</a>
+			     </div>
+		    	<div class="col-md-12 col-sm-10 col-xs-12" id="nav">
+		    	    <div class="sign-register">
+		    	    	<p><a href="member.html" class="glyphicon glyphicon-shopping-cart" title="Shopping Cart"><a href="register.html" title="REGISTER">REGISTER</a><em>|</em><a href="sign.html" title="SIGN IN">SIGN IN</a></p>
+		    	    </div>
+		    		<nav class="navbar">
+		    			<div class="navbar-header">
+		    			     <a href="index.html" class="navbar-brand">
+		    			     	<img src="images/logo.png" alt="WAZOR">
+		    			     </a>
+	                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ex-collapse" aria-expanded="false">
+	                            <span class="icon-bar"></span>
+	                            <span class="icon-bar"></span>
+	                            <span class="icon-bar"></span>
+		                    </button>
+		                </div>
+	   	       	        <div class="collapse navbar-collapse text-center" id="ex-collapse">
+	       		            <ul class="nav navbar-nav">
+	       		                <li><a href="index.html" title="HOME">HOME</a></li>
+	       		        	    <li><a href="products.html" title="products">ALL PRODUCTS</a></li>
+	       		        	    <li><a href="company.html" title="COMPANY">COMPANY</a></li>
+	       		        	    <li><a href="join.html" title="JOIN US">JOIN US</a></li>
+	       		        	    <li><a href="contact.html" title="CONTACT US">CONTACT US</a></li>
+	       		        	    <li><a href="member.html" title="MEMBER CENTER">MEMBER CENTER</a></li>
+	       		            </ul>
+	   	       	        </div>
+		    		</nav>
+		    		<div class="nav1">
+		    		    <div class="left pull-left">
+		    		    	<span class="glyphicon glyphicon-chevron-left"></span>
+		    		    </div>
+			    		<div class="pull-left">
+				    		<ul class="ul list-inline list-unstyled">
+				    		    <li><a href="index.html" title="HOME">HOME</a></li>
+		   		        	    <li><a href="products.html" title="products">ALL PRODUCTS</a></li>
+		   		        	    <li><a href="company.html" title="COMPANY">COMPANY</a></li>
+		   		        	    <li><a href="join.html" title="JOIN US">JOIN US</a></li>
+		   		        	    <li><a href="contact.html" title="CONTACT US">CONTACT US</a></li>
+		   		        	    <li><a href="member.html" title="MEMBER CENTER">MEMBER CENTER</a></li>
+		   		            </ul>
+			    		</div>
+	   		            <div class="right pull-right text-right">
+	   		            	<span class="glyphicon glyphicon-chevron-right"></span>
+	   		            </div>
+		    		</div>
+		    	</div>
+		    </div>
+		</div>
+	</div>
+	<!-- 以上是头部 -->
+	<div class="container-fluid REGISTER-count">
+		<div class="container count-all">
+			<div class="row-fluid">
+				<div class="col-md-12 col-sm-12 col-xs-12 form">
+					<p class="text-center">Registered Customers</p>
+					<form action="" method="post" class="form1">
+					   <div class="form-group">
+					   	    <label for="email" class="email-label">Email address:</label>
+					   	    <input type="email" id="email" placeholder="Email" class="email form-control">
+					   	    <label class="label1"></label>
+					   </div>
+					   <div class="form-group">
+					   	    <label for="text" class="text-label">First name:</label>
+					   	    <input type="email" id="text" placeholder="First name" class="text form-control" required>
+					   </div>
+					   <div class="form-group">
+					   	    <label for="text1" class="email-label">Last name:</label>
+					   	    <input type="email" id="text1" placeholder="Last name" class="text1 form-control" required>
+					   </div>
+					   <div class="sex-label">
+					   	Gender:
+					   </div>
+					   <div class="radio form-group sex">
+					   	    <label class="radio-inline">
+					   	        <input type="radio" id="sex1" name="sex" value="option3"> Female
+					   	    </label>
+					   	    <label class="radio-inline">
+					   	        <input type="radio" id="sex2" name="sex" value="option3"> Male
+					   	    </label>
+					   </div>
+					   <div class="form-group">
+					   	    <label for="number">Age:</label>
+					   	    <input type="number" id="number" class="number form-control" placeholder="Age" step="1" min="1" required>
+					   </div>
+					   <div class="form-group">
+					   	    <label for="password" class="label-password">Password:</label>
+					   	    <input type="password" id="password" placeholder="Password" class="password form-control">
+					   	    <label class="label2"></label>
+					   </div>
+					   <div class="form-group">
+					   	    <label for="password1">Confirm the password:</label>
+					   	    <input type="password" id="password1" placeholder="Password" class="password1 form-control">
+					   	    <label class="label3"></label>
+					   </div>
+					    <button type="button" class="form-control">Confirm</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 下面是注册成功显示 -->
+	<div class="container-fluid account">
+		<div class="row-fluid">
+			<div class="col-md-12 col-sm-12 col-xs-12 count">
+				<p class="text-center">Activate Your Account!</p>
+				<p class="text-center p1">We’re excited to have you with us!</p>
+				<p class="text-center p1">We have sent an Activation Email to below Email address.</p>
+				<p class="text-center p1">Please open the mail to complete registration.</p>
+				<p class="text-center user">110112114119@gmail.com</p>
+				<button type="submit" class="text-center">Resend the Email</button>
+			</div>
+		</div>
+	</div>
+	<!-- 以下底部 -->
+	<div class="container-fluid footer">
+		<div class="container count">
+			<div class="row-fluid">
+				<div class="col-md-3 col-sm-3 col-xs-6 padding">
+					<dl>
+						<dt>About us</dt>
+						<dd><a href="company.html" title="Our company">Our company</a></dd>
+						<dd><a href="companyNews.html" title="Company news">Company news</a></dd>
+						<dd><a href="join.html" title="Join us">Join us</a></dd>
+					</dl>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-6 padding">
+					<dl>
+						<dt>Support</dt>
+						<dd><a href="" title="Buy at amazon">Buy at amazon</a></dd>
+						<dd><a href="member.html" title="Returns">Returns</a></dd>
+						<dd><a href="company.html" title="Brand stories">Brand stories</a></dd>
+					</dl>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-12 padding">
+					<dl class="dl3">
+						<dt>Contact us</dt>
+						<dd><span class="iconfont">&#xe63b;</span><span>12345678910</span></dd>
+						<dd><span class="iconfont">&#xe610;</span><span>123456789@wazor.com</span></dd>
+						<dd><span class="center-block">987654321@wazor.com</span></dd>
+					</dl>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="col-md-9 col-sm-8 col-xs-12 padding ul1">
+					<ul class="list-unstyled clearfix">
+						<li>Payment methods : </li>
+						<li><img src="images/fa-cc-visa.png" class="img-responsive"></li>
+						<li><img src="images/fa-cc-mastercard.png" class="img-responsive"></li>
+						<li><img src="images/fa-cc-paypal.png" class="img-responsive"></li>
+						<li><img src="images/fa-cc-discover.png" class="img-responsive"></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-12 padding text-right ul2">
+					<ul class="list-unstyled list-inline">
+						<li><a href=""><span class="iconfont">&#xe632;</span></span></a></li>
+						<li><a href=""><span class="iconfont">&#xe902;</span></span></a></li>
+						<li><a href=""><span class="iconfont">&#xe7b9;</span></span></a></li>
+						<li><a href=""><span class="iconfont">&#xe8d7;</span></span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="col-md-12 col-sm-12 col-xs-12 padding">
+					<p class="p">Copyright © 2018 Wazor Innovations Limited</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script src="js/nav.js" type="text/javascript"></script>
+<script src="js/register.js" type="text/javascript"></script>
+</body>
+</html>

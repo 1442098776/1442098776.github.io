@@ -1,0 +1,148 @@
+@keyframes register {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.REGISTER-count{
+	animation: register 1s ease-in;
+	-webkit-animation: register 1s ease-in;
+	-moz-animation: register 1s ease-in;
+	-ms-animation: register 1s ease-in;
+	-o-animation: register 1s ease-in;
+	background: url('../images/register.png') no-repeat;
+	background-size:100% 100%;
+	padding-top: 100px;
+	padding-bottom: 121px;
+}
+.REGISTER-count .count-all{
+	border-top:3px solid #CDA118;
+	background: #ffffff;
+	padding-top: 40px;
+}
+.count-all .form p{
+	font-size:24px;
+	color: #000000;
+	padding-bottom: 40px;
+
+}
+.count-all .sex-label{
+	font-size: 16px;
+	color: #000000;		
+}
+.count-all .label1,.count-all .label2,.count-all .label3{
+	display: none;
+	font-size: 12px !important;
+}
+.count-all form label:not(.radio-inline){
+	margin-bottom: 10px;
+	font-size: 16px;
+	font-weight: normal;
+	color: #000000;
+}
+.count-all .form-group{
+	margin-bottom: 20px;
+}
+.count-all .form button,.count-all .form input:not([type=radio]){
+	height: 40px;
+	border-radius: 0;
+	border: 1px solid #cccccc;
+	padding-left: 10px;
+	font-size: 14px;
+	color: #999999;
+}
+.count-all .form button{
+	font-size: 20px;
+	font-weight: bold;
+	background: #242626;
+	color: #ffffff;
+	border-radius: 0;
+	border: 0;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	height:50px;
+}
+.count-all .form form button:hover{
+	background-color:#cda118;
+}
+
+/* 以下是注册成功的样式 */
+.account .count{
+	padding-top: 100px;
+	padding-bottom:116px;
+	display: none;
+}
+.account .count>p:first-of-type{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+.account .p1{
+	font-size: 12px;
+}
+.account .user{
+	padding-top: 19px;
+	color: #CDA118;
+	margin-bottom: 23px;
+}
+.account button{
+	display:block;
+	width: 160px;
+	height: 40px;
+	background: #242626;
+	font-size:16px;
+	font-weight: bold;
+	color:rgba(255,255,255,1);
+	border: 0;
+	margin:0 auto;
+}
+.account button:hover{
+	background-color: #CDA118;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+}
+@media screen and (min-width: 992px){
+	.REGISTER-count .count-all{
+		width: 600px;
+		/* height: 506px; */
+		margin: 0 auto;
+	}
+	.count-all .form{
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+	.count-all .form h3{
+		font-size: 28px;
+
+	}
+	.count-all .form button{
+		font-size: 18px;
+	}
+}
+@media screen and (min-width: 768px){
+	.REGISTER-count .count-all{
+		width: 640px;
+		margin: 0 auto;
+	}
+	.count-all .form{
+		padding-left: 119px;
+		padding-right: 119px;
+	}
+	.count-all .form h3{
+		font-size: 28px;
+
+	}
+	.count-all .form button{
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 350px) {
+	.count-all .form h3{
+		font-size: 14px;
+	}
+}

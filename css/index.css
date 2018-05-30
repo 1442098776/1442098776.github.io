@@ -1,0 +1,696 @@
+.takeTurns{
+	padding-left: 0;
+	padding-right: 0;
+}
+.section{
+    opacity: 0;
+}
+.section1{
+	opacity: 1;
+	transition:all 2s ease;
+	-webkit-transition:all 2s ease;
+	-o-transition:all 2s ease;
+	-moz-transition:all 2s ease;
+	-ms-transition:all 2s ease;
+}
+
+/* 轮翻图后面的标题为COMPANY INTRODUCTION上面的的样式 */
+.company{
+	background-color:rgba(36,38,38,1);
+	padding-top: 50px;
+	padding-bottom: 75px;
+}
+.contact{
+	margin-bottom: 144px;
+}
+.contact .count>ul>li:nth-child(2){
+	margin-top: 20px;
+}
+.contact .count>ul>li{
+	font-family: MicrosoftYaHei;
+	cursor: pointer;
+	color: #ffffff;
+}
+/* .contact .count>ul{
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+} */
+.contact .count>ul>li:first-child a>img:last-child{
+	display: none;
+}
+/* .contact .count>ul>li:first-child>img:hover{
+	perspective: 20000px;
+	transition: all ease 2s;
+	-webkit-transition: all ease 2s;
+	-o-transition: all ease 2s;
+	-moz-transition: all ease 2s;
+	-ms-transition: all ease 2s;
+	transform: scale3d(1.2,1.2, 1.2);
+	-webkit-transform: scale3d(1.2,1.2, 1.2);
+	-o-transform: scale3d(1.2,1.2, 1.2);
+	-moz-transform: scale3d(1.2,1.2, 1.2);
+	-ms-transform: scale3d(1.2,1.2, 1.2);
+}
+ */.contact .count>ul:hover li{
+	color:  #CDA118 ;
+}
+
+/* 标题为COMPANY INTRODUCTION的样式 */
+.company-title,.development-title,.brand-title,.brand2-title{   /*标题的样式*/
+	padding-bottom: 60px;
+}
+.company-title>.title,.brand-title>.title,.development-title>.title,.brand2-title>.title{
+	height: 50px;
+	line-height: 50px;
+	margin: 0 auto;
+	border-right: 10px solid #CDA118;
+	color: #CDA118 !important;
+	font-family: Franklin Gothic Heavy;
+}
+.company-title>.title>span:first-child,.brand-title>.title>span:first-child,
+.development-title>.title>span:first-child,.brand2-title>.title>span:first-child{
+	background-color:  #CDA118;
+	color:  #242626;
+	margin-right: 5px;
+	padding-left: 10px;
+	padding-right: 5px;
+	display: inline-block;
+	height: 100%;
+}
+.count-img>div>div{
+	overflow: hidden;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+}
+.count-img>div>div img{
+	position: relative;
+}
+.count-img>div>div:hover img{
+	perspective: 2px;
+	transition: all ease 2s;
+	-webkit-transition: all ease 2s;
+	-o-transition: all ease 2s;
+	-moz-transition: all ease 2s;
+	-ms-transition: all ease 2s;
+	transform: scale3d(1.1,1.1,1.1);
+	-webkit-transform: scale3d(1.1,1.1,1.1);
+	-o-transform: scale3d(1.1,1.1,1.1);
+	-moz-transform: scale3d(1.1,1.1,1.1);
+	-ms-transform: scale3d(1.1,1.1,1.1);
+
+}
+
+
+/* 标题为COMPANY INTRODUCTION下面的文字的样式 */
+.count-p{
+	padding-top: 50px;
+	font-size: 18px;
+	font-family: Microsoft YaHei;
+	color:  #FFFFFF ;
+}
+
+/* 包裹着标题为BRAND STRENGTH这周围的div的样式 */
+.brand{
+	padding-top: 80px;
+	padding-bottom: 61px;
+}
+.brand-img>div>div>div>div{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	height: 100%;
+	line-height: 20px;
+	color:  #CDA118 ;
+	font-family: MicrosoftYaHei;
+	font-size: 10px;
+	z-index: 6;
+}
+.brand-img>div>div>div>div p:first-child{
+	line-height: 30px;
+	line-height: 30px;
+	font-size: 28px;
+}
+.brand-img>div>div>div>div p:nth-child(2){
+	margin-bottom: 20px;
+}
+.brand-img>div>div>div>div p{
+	opacity:0;
+	transition:all 0.5s ease 0s;
+	-webkit-transition:all 0.5s ease 0s;
+	-o-transition:all 0.5s ease 0s;
+	-ms-transition:all 0.5s ease 0s;
+	-moz-transition:all 0.5s ease 0s;
+}
+.brand-img>div>div>div:before{
+	content:"";
+	width:0;
+	height:100%;
+	background:#000;
+	position:absolute;
+	top:0;
+	left:50%;
+	opacity:0;
+	transition:all 500ms cubic-bezier(0.47,0,0.745,0.715) 0s;
+}
+.brand-img>div>div>div:hover:before{
+	width:100%;
+	left:0;
+	opacity:0.5;
+}
+.brand-img>div>div>div:hover div>p{
+	opacity:1;
+	transition-delay:0.5s;
+}
+
+
+  /* 包裹着标题为DEVELOPEMNT COURSE这周围的div的样式 */
+  .development{
+	background-color: rgba(36,38,38,1);
+	padding-top: 84px;
+	padding-bottom: 61px;
+}
+
+/* 重新设置框架样式 */
+.development-img{
+	background-color: rgba(36,38,38,1);
+	font-family: MicrosoftYaHei;
+}
+
+/* 标题为DEVELOPEMNT COURSE下面的轮翻图样式 */
+.bg{
+	background-color:  #CDA118 !important;
+	color:  #FFFFFF !important;
+}
+.development-left{
+	padding-left: 0;
+	padding-right: 0;
+}
+.development-left .tab{
+	width: 100%;
+	font-size: 14px;
+	background-color: #ffffff;
+	color:  #242626 ;
+
+}
+.development-left .tab{
+	margin-bottom: 20px;
+}
+.development-img .ig{
+	position: absolute;
+}
+.development-img .ig-title{
+	position: absolute;
+	width: 100%;
+	padding-top: 40px;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+/* 第一次出现的标题为BRAND HONOR下面的轮翻图样式 */
+.brand2{
+	position: relative;
+}
+.brand2 .brand2-count{
+	overflow: hidden;
+	position: relative;
+}
+.brand2 .honor-ntb{
+	position: absolute;
+	width: 36px;
+	height: 63px;
+	z-index: 5;
+}
+.brand2 .items{
+	position: absolute;
+}
+.brand2 .honor-img{
+	float: left;
+}
+.brand2 .items li{
+	margin-right: 20px;
+}
+
+.brand2-count1{
+	display: none;
+}
+
+/* 第二次出现的标题为BRAND HONOR下面的轮翻图样式 */
+.more:before{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+}
+.more{
+	background-image: url('../images/5/more.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.more>div:first-child{
+		padding-top: 84px;
+}
+.more .more-count{
+	padding-bottom:80px;
+}
+.more-title>p:first-child{
+	margin-bottom: -20px;
+}
+.more-title>p:not(:last-child){
+	font-family: Swis721 BlkCn BT;
+	font-size: 80px;
+	color: #ffffff;
+}
+.more-title>p:last-child>span{
+	display:block;
+	font-size: 31px;
+	font-family: Swiss721BT-BlackCondensed;
+	background-color:  #CDA118 ;
+	color: #ffffff;
+	position: relative;
+	height: 30px;
+	width: 110px;
+}
+.more-title>p:last-child>span b{
+	position: absolute;
+	bottom: -12px;
+	left: 5px;
+}
+.more-title>p:last-child{
+	margin-top: 30px;
+}
+.more-nav{
+	padding-bottom: 30px;
+}
+.more-nav>div div{
+	font-family: BankGothicBT-Light;
+	font-size: 18px;
+}
+.more-nav>div div a{
+	color: #ffffff;
+}
+
+@media screen and (min-width: 992px) {
+	/* 距离标题为COMPANY INTRODUCTION上面div居中 */
+	.contact{
+		width: 730px;
+		height: 168px;
+		margin: 0 auto 144px auto;
+	}
+	.count-img{
+		width: 891px;
+		margin: 0 auto;
+	}
+	.count-img>div div{
+		width: 253px;
+		height: 368px;
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: 22px;
+		margin-right: 22px;
+	}
+	.company-title>.title{
+		font-size: 40px;
+		width: 600px;
+
+	}
+
+	/* 包裹着标题为BRAND STRENGTH这周围的div的样式 */
+	.brand-title>.title{
+		font-size: 40px;
+		width: 400px;
+	}
+	.brand-img{
+		width: 1171px;
+		margin: 0 auto;
+	}
+	.brand-img>div>div{
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+	.brand-img>div>div:nth-child(odd)>div{
+		margin-top: 51px;
+	}
+	.brand-img>div>div:not(:nth-child(2)){
+		width: 364px;
+	}
+	/* .brand-img>div>div>img{
+		vertical-align: middle;
+		display: inline-block;
+	} */
+	.brand-img>div>div:nth-child(2){
+		width: 443px;
+	}
+	.brand-img>div>div:nth-child(odd)>div{
+		height: 409px;
+	}
+	.brand-img>div>div:nth-child(even)>div{
+		height: 511px;
+	}
+	.brand-img>div>div>div>div{
+		padding-right: 48px;
+	}
+	.brand-img>div>div:nth-child(even)>div>div{
+		padding-top: 350px;
+	}
+	.brand-img>div>div:nth-child(odd)>div>div{
+		padding-top: 300px;
+	}
+	.brand-img>div>div:nth-child(odd)>div:before{
+		top: 51px;
+		height: 409px;
+	}
+	.brand-img>div>div:nth-child(odd)>div:hover:before{
+		height: 409px;
+		width: 316px;
+		left: 24px !important;
+	}
+	.brand-img>div>div:nth-child(even)>div:before{
+		height: 511px;
+	}
+	.brand-img>div>div:nth-child(even)>div:hover:before{
+		height: 511px;
+		width: 395px;
+		left: 24px !important;
+	}
+
+
+	/* 包裹着标题为DEVELOPEMNT COURSE这周围的div的样式 */
+	.development-title>.title{
+		font-size: 40px;
+		width: 500px;
+	}
+
+	/* 标题为DEVELOPEMNT COURSE下面的轮翻图样式 */
+	.development-img{
+		width: 1162px;
+		margin: 0 auto;
+	}
+	.development-img .development-left{
+		width: 270px;
+		padding-right: 39px;
+		padding-left: 0;
+	}
+	.development-left .tab{
+		text-align: center;
+	}
+	.development-left .tab{
+		height: 53px;
+		line-height: 53px;
+
+	}
+	.development-img .development-right{
+		width: 892px;
+		height: 810px;
+		padding: 0;
+	}
+	.development-img #btn{
+		width: 33px;
+		height: 467px;
+		line-height: 467px;
+	}
+	.development-img #btn img{
+		vertical-align: middle;
+		display: inline-block;
+	}
+	.development-right #igs{
+		width: 776px;
+		height: 607px;
+	}
+	.development-right .ig{
+		width: 776px;
+	}
+	.development-img .ig a:last-child{
+		padding-left: 22px;
+	}
+	.development-img .btn1{
+		margin-right: 25px;
+	}
+	.development-img .btn2{
+		margin-left: 25px;
+	}
+	.development-right .ig-title{
+		top:467px;
+	}
+
+	/* 第一次出现的标题为BRAND HONOR下面的轮翻图样式 */
+	.brand2{
+		width: 1220px;
+		margin: 0 auto;
+	}
+	.brand2 .brand2-count{
+		width: 1220px;
+		height: 389px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.brand2 .items{
+		height: 389px;
+		left: 0;
+		padding-left: 0
+	}
+	.brand2 .honor-img{
+		width:285px;
+		height:389px;
+	}
+	.brand2 .honor-left{
+		left: 0;
+		top: 40%;
+		text-align:right;
+	}
+	.brand2 .honor-right{
+		right: 20px;
+		top: 40%;
+	}
+
+	 /* 第二次出现的标题为BRAND HONOR下面的轮翻图样式 */
+	 .more{
+	 	height: 638px;
+	 }
+	 .more-count{
+	 	width: 1000px;
+	 	margin: 0 auto;
+	 }
+	 .more{
+	 	height: 638px;
+	 }
+	 .title{
+	 	width: 345px;
+	 	margin: 0 auto;
+	 	font-size: 40px;
+	 }
+
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+	/* 标题为COMPANY INTRODUCTION居中 */
+	.company-title>.title{
+		font-size: 40px;
+		width: 600px;
+
+	}
+	.brand-title>.title{
+		font-size: 40px;
+		width: 400px;
+	}
+
+	/* 包裹着标题为BRAND STRENGTH这周围的div的样式 */
+	.brand-img>div>div>div>div{
+		padding-top: 30%;
+		left:0px;
+	}
+
+	/* 包裹着标题为DEVELOPEMNT COURSE这周围的div的样式 */
+	.development-title>.title{
+		font-size: 40px;
+		width: 505px;
+	}
+
+	/* 标题为DEVELOPEMNT COURSE下面的轮翻图样式 */
+	.development-left .tab{
+		padding-top: 10px;
+		padding-bottom: 10px;
+
+	}
+	.development-img #btn{
+		width: 10%;
+		height: 467px;
+		line-height: 467px;
+	}
+	.development-img #btn img{
+		vertical-align: middle;
+		display: inline-block;
+		
+	}
+	.development-img .btn2{
+		text-align: right;
+	}
+	.development-img .development-right{
+		height: 1300px;
+	}
+	.development-right #igs{
+		width: 70%;
+		height: 607px;
+	}
+	.development-right .ig-img>a:first-child{
+		padding-bottom: 22px;
+	}
+	.development-img .ig-title{
+		top: 940px;
+	}
+
+	/* 第一次出现的标题为BRAND HONOR下面的轮翻图样式 */
+	.brand2{
+		width: 100%;
+		margin: 0 auto;
+	}
+	.brand2 .brand2-count{
+		width: 100%;
+		height: 389px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.brand2 .items{
+		height: 389px;
+		left: 0;
+		padding-left: 0
+	}
+	.brand2 .honor-img{
+		width:285px;
+		height:389px;
+	}
+	.brand2 .honor-left{
+		left: 0;
+		top: 40%;
+		text-align:right;
+	}
+	.brand2 .honor-right{
+		right: 20px;
+		top: 40%;
+	}
+
+	/* 第二次出现的标题为BRAND HONOR下面的轮翻图样式 */
+	.title{
+		width: 345px;
+		margin: 0 auto;
+		font-size: 40px;
+	}
+	.more-title{
+		padding-left: 80px;
+	}
+	.more-nav{
+		margin: 0;
+		width: 100%;
+	}
+	.more-nav>div div{
+		padding-left: 0;
+		padding-right: 0;
+		font-size: 14px;
+	}
+
+}
+@media screen and (max-width: 767px) {
+	/* 标题为COMPANY INTRODUCTION居中 */
+	.company-title .title{
+		width: 300px;
+		height: 30px;
+		line-height: 30px;
+		font-size: 20px;
+	}
+	.count-img>div div:not(:last-child){
+		margin-bottom: 15px;
+	}
+
+	/* 包裹着标题为BRAND STRENGTH这周围的div的样式 */
+	.brand-title>.title{
+		margin-top: 20px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 28px;
+		width: 300px;
+	}
+	.brand-img>div>div:not(:last-child){
+		margin-bottom: 10px;
+	}
+	.brand-img>div>div>div>div{
+		padding-top: 50%;
+		left:0px;
+	}
+
+	/* 包裹着标题为DEVELOPEMNT COURSE这周围的div的样式 */
+	.company-title,.brand-title,.development-title{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.development-title>.title{
+		font-size: 22px;
+		width: 300px;
+		height: 40px;
+		line-height: 40px;
+	}
+
+	/* 标题为DEVELOPEMNT COURSE下面的轮翻图样式 */
+	.development-left{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.development-left .tab{
+		height: 53px;
+		line-height: 53px;
+		text-align: center;
+
+	}
+	.development-img #btn{
+		display: none;
+	}
+	.development-img .development-right{
+		height: 1340px;
+/* 		padding: 0; */
+	}
+	.development-right #igs{
+		width: 100%;
+		height: 815px;
+	}
+	.development-right .ig-img>a:first-child{
+		padding-bottom: 22px;
+	}
+	.development-img .ig-title{
+		top: 940px;
+	}
+
+	/* 第一次出现的标题为BRAND HONOR下面的轮翻图样式 */
+	.brand2-count{
+		display: none;
+	}
+	.brand2-count1{
+		display: block;
+	}
+
+	/* 第二次出现的标题为BRAND HONOR下面的轮翻图样式 */
+	.title{
+		width: 260px;
+		margin: 0 auto;
+		font-size: 30px;
+		height: 40px !important;
+		line-height: 40px !important;
+	}
+	.more-title>p:not(:last-child){
+		/* margin-left: 15px; */
+		font-size: 40px !important;
+	}
+	.more-title{
+		padding-left: 40px;
+	}
+	.more-nav>div div{
+		padding: 20px 0;
+		/* font-size: 14px; */
+
+	}
+}

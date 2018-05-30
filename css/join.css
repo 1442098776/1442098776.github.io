@@ -1,0 +1,109 @@
+@keyframes mymove{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+.joinUs{
+	padding-top: 40px;
+	padding-bottom:90px;
+	animation: mymove 3s ease;
+	-o-animation: mymove 3s ease;
+	-webkit-animation: mymove 3s ease;
+	-moz-animation: mymove 3s ease;
+	-ms-animation: mymove 3s ease;
+}
+.joinUs .pHeader>p:first-of-type{
+	padding-bottom: 10px;
+	font-size: 22px;
+	color: #000000;
+	font-weight: bold;
+	border-bottom: 1px solid #E0E0E0;
+	margin-bottom: 20px;
+}
+.joinUs .pHeader>p:nth-of-type(2){
+	margin-bottom: 30px;
+}
+.count{
+	margin-top: 40px;
+}
+.count>ul{
+	display: none;
+	margin-bottom:20px;
+	width: 387px;
+	height: 470px;
+	border: 1px solid #CCCCCC;
+	padding: 40px 20px 0px 40px;
+}
+.count>ul:hover{
+	cursor: pointer;
+	border-color: #CDA118;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+}
+.count>ul>li{
+	margin-bottom: 10px;
+}
+.count>ul>.li1{
+	margin-bottom: 30px;
+	font-weight: bold;
+	color: #010101;
+	font-size: 18px;
+}
+.count>ul>.li2{
+	padding-top: 30px;
+	margin-bottom: 60px;
+	color: #666666;
+}
+.count>ul>li:last-of-type>a{
+	font-weight: bold;
+	font-size: 16px;
+	color: #fff;
+	display: block;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #242626;	
+}
+.count>ul>li:last-of-type>a:hover,.section .loadMore:hover{
+	background-color: #cda118;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+}
+.section .loadMore{
+	display: inline-block;
+	margin-top: 60px;
+	width: 160px;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	background-color:#242626;
+	cursor: pointer;
+}
+@media screen and (min-width: 992px) {
+	.joinUs .section{
+		width: 1200px;
+		margin: 0 auto;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.count>ul{
+		width: 49%;
+	}
+}
+@media screen and (max-width: 767px) {
+	.section .pHeader>p:not(:first-of-type),.section .count{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.count>ul{
+		clear: both;
+		width: 100%;
+		height: auto;
+		padding:40px 20px 40px;
+	}
+}
